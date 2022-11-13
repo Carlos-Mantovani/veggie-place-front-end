@@ -26,6 +26,7 @@ const register = async () => {
         if (xhr.readyState === 4 && xhr.status === 201) {
             error.innerText = '';
             console.log('sucesso:', xhr.responseText);
+            window.location = './login.html';
         } else {
             error.innerText = xhr.responseText;
         }
