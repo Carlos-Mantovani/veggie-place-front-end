@@ -2,7 +2,7 @@ const error = document.getElementById('error');
 
 const getContent = async () => {
     try {
-        const resp = await fetch('http://localhost:3000/users');
+        const resp = await fetch('https://veggie-place-production.up.railway.app/register');
         const data = await resp.json();
         console.log(data);
     } catch (err) {
