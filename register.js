@@ -23,7 +23,7 @@ const register = async () => {
     xhr.setRequestHeader('Content-Type', 'application/json');
 
     xhr.onreadystatechange = () => {
-        if (xhr.readyState === 4 && xhr.status === 200) {
+        if (xhr.readyState === 4 && xhr.status === 201) {
             error.innerText = '';
             console.log('sucesso:', xhr.responseText);
         } else {
