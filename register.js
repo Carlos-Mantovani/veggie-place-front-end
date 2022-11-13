@@ -2,7 +2,7 @@ const error = document.getElementById('error');
 
 const getContent = async () => {
     try {
-        const resp = await fetch('https://veggie-place-production.up.railway.app/register');
+        const resp = await fetch('https://veggie-place-production.up.railway.app/users');
         const data = await resp.json();
         console.log(data);
     } catch (err) {
@@ -17,7 +17,7 @@ const register = async () => {
     const password = document.getElementById('password').value;
 
     const xhr = new XMLHttpRequest();
-    const url = 'http://localhost:3000/register';
+    const url = 'https://veggie-place-production.up.railway.app/register';
 
     xhr.open('POST', url, true);
     xhr.setRequestHeader('Content-Type', 'application/json');
