@@ -6,7 +6,7 @@ const login = async () => {
     const password = document.getElementById('password').value;
 
     const xhr = new XMLHttpRequest();
-    const url = 'http://localhost:3000/login';
+    const url = 'https://veggie-place-production.up.railway.app/login';
 
     xhr.open('POST', url, true);
     xhr.setRequestHeader('Content-Type', 'application/json');
