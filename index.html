@@ -5,434 +5,334 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responssividade.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Veggie Place</title>
     <script src="https://kit.fontawesome.com/0cbd230126.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- Cabeçalho -->
     <header>
-        <!-- Logo aqui -->
-        <nav class="nav">
-            <!-- navegation -->
-            <div class="menu">
-                <a href="">Entregador</a>
-                <a href="">Alguma outra função</a>
-                <a href="">Alguma outra função</a>
-            </div>
-            <!-- login -->
-            <div class="login">
-                
-                <a href="cadastro.html" id="lCCount">Criar conta</a>
-                <a href="login.html"><button id="bEnter">Entrar</button></a>
-                <button id="bLeave">Sair</button>
-            </div>
-        </nav>
-
+        <div class="container">
+            <a href="/"><img src="./img/logo_veggie_place_larger-width.png" alt="logo-vp"></a>
+            <nav>
+                <ul>
+                    <li><a href="../sobre-nos/about-us.html">Quem somos</a></li>
+                    <li><a href="../entregador/entregador.html">Entregador</a></li>
+                    <li><a href="../restaurante/restaurant.html">Restaurante</a></li>
+                    <li><a href="../Mercado/mercado.html">Mercado</a></li>
+                </ul>
+                <div class="account">
+                    <ul>
+                        <li><a href="cadastro.html" id="lCCount">Criar conta</a></li>
+                    </ul>
+                    <a href="login.html"><button id="bEnter" style="color: white;">Entrar</button></a>
+                    <button id="bLeave" style="color: white;">Sair</button>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <!-- Conteúdo Principal -->
+    <section class="banner">
+        <div class="container">
+            <div>
+                <h2>Um mundo inteiro para se explorar!</h2>
+                <p>Venha conhecer nosso <a href="">Blog</a>, onde damos dicas de como ingressar nesse mundo.</p>
+                <form action="" class="search-bar">
+                    <div id="icon-inpSearch">
+                        <label for="inpSearch"><i class="fa-solid fa-magnifying-glass"></i></label>
+                        <input type="search" id="inpSearch" name="input-search">
+                        <button type="submit" id="bSearch" name="button-search">Buscar</button>
+                    </div>
+                </form>
+            </div>
+            <img src="./img/image-banner.svg" alt="img-banner">
+        </div>
+    </section>
     <main>
-        <div class="banner">
-            <h1>Um mundo inteiro para se explorar!</h1>
-            <p id="pBanner">Venha conhecer nosso <a href="https://vegpedia.com/sites-uteis/blogs/" id="spanBlog"
-                    target="_blank">Blog</a>, onde damos dicas de como ingressar nesse mundo.</p>
-
-            <div class="search">
-                <div id="icon-inpSearch">
-                    <label for="inpSearch"><i class="fa-solid fa-magnifying-glass"></i></label>
-                    <input type="search" id="inpSearch">
-                    <button type="submit" id="bSearch">Buscar</button>
-                </div>
-            </div>
-
-        </div>
-        <div class="cards-section">
-            <!-- card restaurante -->
-            <div class="container-cards">
-                <div class="cardRestBack">
-                    <div class="card-content">
-                        <h2>Restaurante</h2>
-                        <button id="bRestaurant">Ver opções <span class="material-icons">chevron_right</span></button>
-                        <img src="/IMG/burger.png" alt="Img" id="burger">
-                    </div>
-
-                </div>
-                <div class="space"></div>
-                <!-- card mercado -->
-                <div class="cardMarkBack">
-                    <div class="card-content">
-                        <h2>Mercado</h2>
-                        <button id="bMarket">Ver opções <span class="material-icons">chevron_right</span></button>
-                        <img src="/IMG/cart mercado.png" alt="Img" id="cart">
-
-                    </div>
-
-                </div>
-
-            </div>
-            <!-- card cosméticos -->
-            <div class="cardCosmetic">
-                <div id="backgroundCosmetic">
-                    <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-cosmetics-vegan-and-vegetarian-flaticons-lineal-color-flat-icons.png"
-                        alt="icon">
-                </div>
-                <button id="bCosmetic">Cosméticos <span class="material-icons">chevron_right</span></button>
-            </div>
-
-        </div>
-
-        <div class="row-divider">
-            <!-- linha divisória  -->
-        </div>
-
-        <!-- os melhores da semana -->
-        <div class="best">
-            <h3 id="h3best">Os melhores restaurantes</h3>
-            <div class="boxs">
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row-divider">
-            <!-- linha divisória  -->
-        </div>
-
-        <!-- os melhores da semana 2 -->
-        <div class="best">
-            <h3 id="h3best">Os melhores Mercados</h3>
-            <div class="boxs">
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="item">
-                    <figure>
-                        <img src="/IMG/image 32.svg" alt="img-comida">
-                        <figcaption>
-                            <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
-                            <strong>R$ 5,19</strong>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
-
-        <!-- Junte-se ao Veggie Place -->
-        <div class="work-With-Us">
-            <h2>Junte-se ao <span id="spanVP">Veggie Place</span></h2>
-
-            <div class="container-cardsWork">
-
-                <div class="cards-work">
-                    <h3>Seja um entregador </h3>
-
-                    <div class="description-cards-work">
-                        <img src="/IMG/image 18.svg" alt="icon">
-
-                        <div class="text-button">
-                            <p>Ganhe dinheiro extra fazendo entregas. Receba 100% de suas gorjetas. Faça agora o seu
-                                cadastro e comece o quanto antes.</p>
-                            <button class="bCards">Saiba mais</button>
+        <section class="cards-categorie">
+            <div class="container">
+                <a href="../restaurante/restaurant.html" class="card">
+                    <div class="content">
+                        <h3>Restaurante</h3>
+                        <img src="./img/imagem-restaurante.svg" alt="img1">
+                        <div class="see-options">
+                            <p>Ver Opções </p> <span class="material-icons">chevron_right</span>
                         </div>
-
-
                     </div>
-                </div>
-
-                <div class="cards-work">
-                    <h3>Cadastre seu negócio</h3>
-
-                    <div class="description-cards-work">
-                        <img src="/IMG/image 17.svg" alt="icon">
-
-                        <div class="text-button">
-                            <p>Tenha acesso a milhões de usuários sem precisar sair de sua loja. Cadastre seu
-                                restaurante ou o seu mercado.</p>
-                            <button class="bCards">Saiba mais</button>
+                </a>
+                <a href="../Mercado/mercado.html" class="card" id="market">
+                    <div class="content">
+                        <h3>Mercado</h3>
+                        <img src="./img/imagem-mercado.svg" alt="img2" id="img-market">
+                        <div class="see-options" id="see-options-market">
+                            <p>Ver Opções </p> <span class="material-icons">chevron_right</span>
                         </div>
-
                     </div>
-
+                </a>
+            </div>
+            <a href="" class="card-menor">
+                <div class="background">
+                    <img src="./img/image-cosmetico.svg" alt="img3">
                 </div>
+                <div class="texto">
+                    <p>Cosméticos </p> <span class="material-icons">chevron_right</span>
+                </div>
+            </a>
+        </section>
+
+        <section class="best-seller">
+            <h3>Os mais vendidos <span><img src="./img/icone-best-seller.svg" alt="icon-bestSeller"></span></h3>
+            <div class="content-best-seller">
+                <button class="arrow-left control" aria-label="Previous image">◀</button>
+                <div class="boxs">
+                    <a href="../produto-mercado/produto.html" class="item current-item">
+                        <figure>
+                            <img src="./img/image 32.svg" alt="image-produto">
+                            <figcaption>
+                                <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
+                                <strong>R$ 5,19</strong>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="../produto-mercado/produto.html" class="item">
+                        <figure>
+                            <img src="./img/image 32.svg" alt="image-produto">
+                            <figcaption>
+                                <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
+                                <strong>R$ 5,19</strong>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="../produto-mercado/produto.html" class="item">
+                        <figure>
+                            <img src="./img/image 32.svg" alt="image-produto">
+                            <figcaption>
+                                <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
+                                <strong>R$ 5,19</strong>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="../produto-mercado/produto.html" class="item">
+                        <figure>
+                            <img src="./img/image 32.svg" alt="image-produto">
+                            <figcaption>
+                                <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
+                                <strong>R$ 5,19</strong>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="../produto-mercado/produto.html" class="item">
+                        <figure>
+                            <img src="./img/image 32.svg" alt="image-produto">
+                            <figcaption>
+                                <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
+                                <strong>R$ 5,19</strong>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="../produto-mercado/produto.html" class="item">
+                        <figure>
+                            <img src="./img/image 32.svg" alt="image-produto">
+                            <figcaption>
+                                <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
+                                <strong>R$ 5,19</strong>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="../produto-mercado/produto.html" class="item">
+                        <figure>
+                            <img src="./img/image 32.svg" alt="image-produto">
+                            <figcaption>
+                                <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
+                                <strong>R$ 5,19</strong>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="../produto-mercado/produto.html" class="item">
+                        <figure>
+                            <img src="./img/image 32.svg" alt="image-produto">
+                            <figcaption>
+                                <p>Massa para Lasanha Orgânica Bio Carrefour 200g</p>
+                                <strong>R$ 5,19</strong>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <button class="arrow-right control" aria-label="Next Image">▶</button>
 
             </div>
-        </div>
+        </section>
 
-        <div class="info-blog">
-            <div class="rectangle1">
-                <article class="artc1">
-                    <img src="/IMG/image 19.svg" alt="img">
+        <section class="brands">
+            <h3>Marcas que temos</h3>
+            <div class="content-brands">
+                <button class="arrow-left2 control2" aria-label="Previous image">◀</button>
+                <div class="boxs">
+                    <a href="#" class="item2 current-item2">
+                        <figure>
+                            <img src="./img/Marca 1.svg" alt="image-marca">
+                            <figcaption>
+                                <p>Vida veg</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" class="item2">
+                        <figure>
+                            <img src="./img/Marca 1.svg" alt="image-marca">
+                            <figcaption>
+                                <p>Vida veg</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" class="item2">
+                        <figure>
+                            <img src="./img/Marca 1.svg" alt="image-marca">
+                            <figcaption>
+                                <p>Vida veg</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" class="item2">
+                        <figure>
+                            <img src="./img/Marca 1.svg" alt="image-marca">
+                            <figcaption>
+                                <p>Vida veg</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" class="item2">
+                        <figure>
+                            <img src="./img/Marca 1.svg" alt="image-marca">
+                            <figcaption>
+                                <p>Vida veg</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" class="item2">
+                        <figure>
+                            <img src="./img/Marca 1.svg" alt="image-marca">
+                            <figcaption>
+                                <p>Vida veg</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" class="item2">
+                        <figure>
+                            <img src="./img/Marca 1.svg" alt="image-marca">
+                            <figcaption>
+                                <p>Vida veg</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" class="item2">
+                        <figure>
+                            <img src="./img/Marca 1.svg" alt="image-marca">
+                            <figcaption>
+                                <p>Vida veg</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" class="item2">
+                        <figure>
+                            <img src="./img/Marca 1.svg" alt="image-marca">
+                            <figcaption>
+                                <p>Vida veg</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" class="item2">
+                        <figure>
+                            <img src="./img/Marca 1.svg" alt="image-marca">
+                            <figcaption>
+                                <p>Vida veg</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <button class="arrow-right2 control2" aria-label="Next Image">▶</button>
 
-                    <div class="text-artc">
-                        <h4>5 dicas essenciais para uma alimentação vegana saudável</h4>
-                        <p>O veganismo ainda é criticado pela população em geral. Seja pela falta de informação ou
-                            preconceito.</p>
+            </div>
+        </section>
+
+        <section class="work-with-us">
+            <div class="content-work-with-us">
+                <div class="box-card">
+                    <h3>Seja um entregador</h3>
+                    <div class="text-and-img">
+                        <img src="./img/Cenouritos.svg" alt="mascote-img">
+                        <div class="text-and-button">
+                            <p>Ganhe dinheiro extra fazendo entregas. Receba 100% de suas gorjetas.
+                                Faça agora o seu cadastro e comece o quanto antes.</p>
+
+                            <a href="#">Saiba mais</a>
+                        </div>
                     </div>
-                </article>
+                </div>
+                <div class="box-card">
+                    <h3>Registre seu negócio</h3>
+                    <div class="text-and-img">
+                        <img src="./img/Acabate.svg" alt="mascote-img">
+                        <div class="text-and-button">
+                            <p>
+                                Tenha acesso a milhões de usuários sem precisar sair de sua loja.
+                                Cadastre seu restaurante ou o seu mercado.
+                            </p>
 
-                <p class="p-rectangle" id="p-rectangle1">Temos um blog para te ajudar</p>
-            </div>
-
-            <div class="rectangle2">
-                <p class="p-rectangle" id="p-rectangle2">A conhecer esse estilo de vida</p>
-
-                <article class="artc2">
-                    <img src="/IMG/image 20.svg" alt="img">
-
-                    <div class="text-artc">
-                        <h4>Como os produtos veganos ajudam a melhorar a saúde alimentar?</h4>
-                        <p>A cada dia mais pessoas têm buscado um estilo de vida mais saudável, o que inclui a prática
-                            de exercícios, mudanças de hábitos e uma alimentação mais equilibrada.</p>
+                            <a href="/cadastro/cadastro-loja.html">Saiba mais</a>
+                        </div>
                     </div>
-                </article>
+                </div>
             </div>
-        </div>
-        <div class="row-divider" id="row-divider-3">
-            <!-- linha divisória  -->
+        </section>
     </main>
-
-    </div>
     <footer>
-
-        <p>© Copyright 2022 - Veggie Place - Todos os direitos reservados Veggie Place com Agência de Restaurantes
-            Online S.A.</p>
-
-        <div class="socialFooter">
-            <p>Social</p>
-            <ul>
-                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100067733033635">Facebook</a> </li>
-                <li><a target="_blank" href="">Instagram</a> </li>
-                <li><a target="_blank" href="">Twitter</a> </li>
-            </ul>
-        </div>
+        <section class="more-info">
+            <div class="box" id="box-vp">
+                <strong>Veggie Place</strong>
+                <ul>
+                    <li><a href="#">Site institucional</a></li>
+                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                </ul>
+            </div>
+            <div class="box" id="box-discover">
+                <strong>Descubra</strong>
+                <ul>
+                    <li><a href="">Cadastre seu Restaurante ou Mercado</a></li>
+                </ul>
+            </div>
+            <div class="box" id="box-social">
+                <strong>Social</strong>
+                <ul>
+                    <li> <a href="#">Facebook</a></li>
+                    <li> <a href="#">Youtube</a></li>
+                    <li> <a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="copyright-and-terms">
+            <div class="copyright-text">
+                <p>
+                    © Copyright 2021 - iFood - Todos os direitos reservados iFood com Agência de Restaurantes Online
+                    S.A.
+                </p>
+            </div>
+            <div class="terms-links">
+                <ul>
+                    <li><a href="#">Termos e condições de uso</a></li>
+                    <li><a href="#">Código de conduta</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Dicas de segurança</a></li>
+                </ul>
+            </div>
+        </section>
     </footer>
+    <script src="./slider.js"></script>
     <script>
         const register = document.getElementById('lCCount');
-        const login = document.getElementById('bEnter')
+        const login = document.getElementById('bEnter');
         const leave = document.getElementById('bLeave');
         const bearerToken = localStorage.getItem('bearerToken');
         if (bearerToken) {
