@@ -48,6 +48,9 @@ a {
 /* ------------------------------- HEADER e MENU --------------------------- */
 header {
     background-color: #F7F7F7;
+    position: fixed;
+    z-index: 1000;
+    width: 100vw;
 }
 
 header .container {
@@ -815,4 +818,8 @@ footer section.copyright-and-terms .terms-links ul li a {
 /* hover */
 footer section.copyright-and-terms .terms-links ul li a:hover {
     color: var(--cor-viva-1);
+}
+
+.spacing {
+    height: 64px;
 }

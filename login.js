@@ -11,21 +11,28 @@ const login = async () => {
     xhr.open('POST', url, true);
     xhr.setRequestHeader('Content-Type', 'application/json');
 
-    xhr.onreadystatechange = () => {
+    xhr.onreadystatechange = async () => {
         if (xhr.readyState === 4 && xhr.status === 200) {
             error.innerText = '';
-            let bearerToken = JSON.parse(xhr.response).token;
             window.location = './index.html';
-            console.log(bearerToken);
-            console.log(JSON.parse(xhr.response));
-            localStorage.setItem('bearerToken', JSON.parse(xhr.response))
+            const response = JSON.parse(xhr.response);
+            const userInformation = {
+                token: response.token,
+                id: response.id
+            }
+            console.log(userInformation);
+            localStorage.setItem('authentication', JSON.stringify(userInformation));
         } else {
             error.innerText = xhr.responseText;
         }
     }
+
     const data = JSON.stringify({ email, password });
     xhr.send(data);
+
 }
+
+
 
 form = document.getElementById('form');
 form.addEventListener('submit', (e) => {

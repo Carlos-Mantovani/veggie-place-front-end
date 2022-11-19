@@ -24,6 +24,11 @@
                     <li><a href="../Mercado/mercado.html">Mercado</a></li>
                 </ul>
                 <div class="account">
+                    <div class="user" style="display: flex; align-items: center; margin-right: 24px;">
+                        <p id="name"></p>
+                        <img id="image" style="width: 42px; border-radius: 100px; margin-left: 8px;"></img>
+                    </div>
+
                     <ul>
                         <li><a href="cadastro.html" id="lCCount">Criar conta</a></li>
                     </ul>
@@ -33,7 +38,7 @@
             </nav>
         </div>
     </header>
-
+    <div class="spacing"></div>
     <section class="banner">
         <div class="container">
             <div>
@@ -334,19 +339,39 @@
         const register = document.getElementById('lCCount');
         const login = document.getElementById('bEnter');
         const leave = document.getElementById('bLeave');
-        const bearerToken = localStorage.getItem('bearerToken');
+        const username = document.getElementById('name');
+        const userImage = document.getElementById('image');
+        const storageItems = localStorage.getItem('authentication');
+        let authentication;
+        storageItems ? authentication = JSON.parse(storageItems) : authentication = '';
+        const bearerToken = authentication.token;
+
+        const getUser = async () => {
+            const data = await fetch(`https://veggie-place-production.up.railway.app/users/${authentication.id}`, {
+                headers: {
+                    "Authorization": `Bearer ${bearerToken}`
+                }
+            });
+            const user = await data.json();
+            username.innerText = user.username;
+            userImage.src = user.photo;
+        }
+
         if (bearerToken) {
             register.style.display = 'none';
             login.style.display = 'none';
+            getUser();
             //alert('Logado');
         } else {
             leave.style.display = 'none';
+            username.innerText = '';
+            userImage.src = '';
             //alert('não logado');
         }
 
         const logout = () => {
             window.location = './cadastro.html';
-            localStorage.setItem('bearerToken', '');
+            localStorage.setItem('authentication', '');
         }
 
         leave.addEventListener('click', logout);
