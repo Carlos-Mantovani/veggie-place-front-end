@@ -33,6 +33,9 @@ const register = async () => {
     }
     const data = JSON.stringify({ username, email, password });
     xhr.send(data);
+    username.innerText = '';
+    email.innerText = '';
+    password.innerText = '';
 }
 
 form = document.getElementById('form');

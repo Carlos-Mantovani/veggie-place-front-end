@@ -29,7 +29,8 @@ const login = async () => {
 
     const data = JSON.stringify({ email, password });
     xhr.send(data);
-
+    email.innerText = '';
+    password.innerText = '';
 }
 
 
