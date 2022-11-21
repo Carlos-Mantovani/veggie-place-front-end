@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="produto-res.css">
+    <script src="../produto-restaurante/functions.js" defer></script>
+    <title>Produto Restaurante</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html"><img src="../IMG/logo_veggie_place_larger-width.png" alt="logo-vp" title="voltar ao início"></a>
+
+            <nav>
+                <ul>
+                    <li><a href="../sobre-nos/about-us.html">Quem somos</a> </li>
+                    <li><a href="../entregador/entregador.html">Entregador</a></li>
+                    <li><a href="../restaurante/restaurant.html">Restaurante</a> </li>
+                    <li><a href="../Mercado/mercado.html"><span id="current-page">Mercado</span></li>
+                </ul>
+                <div class="profile-and-cart">
+                    <ul>
+                        <li>perfil</li>
+                    </ul>
+                    <a href="#">carrinho</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="food-name">
+                <p>Feijoada</p>
+            </div>
+            <div class="container">
+                <div class="about-food">
+                    <section class="name-and-value">
+                        <p id="product-name">Feijoada Defumada</p>
+                        <p id="price"></p>
+                    </section>
+
+                    <section class="restaurant-stars">
+                        <div class="line1">
+                            <p>Lar vegan</p>
+                            <p>avaliação</p>
+                        </div>
+                        <div class="line2">
+                            <p>0 a 30 minutos</p>
+                        </div>
+                    </section>
+
+                    <section class="radio-options">
+                        <h4>Escolha sua opção</h4>
+                        <label for="">
+                            <p>Com talheres plásticas</p>
+                            <input type="radio" name="with" value="with-plastic-cutlery">
+                        </label>
+                        <label for="">
+                            <p>Sem talheres plásticas</p>
+                            <input type="radio" name="with" value="with-not-plastic-cutlery" checked>
+                        </label>
+                    </section>
+
+                    <section class="comments">
+                        <label for="comment">
+                            <p>Algum comentário?</p>
+                            <textarea name="comment-client" id="comment" cols="30" rows="4" placeholder="EX: tirar a cebola, maionese etc."></textarea>
+                        </label>
+                        <button id="save-comment" onclick="adicionarTexto()"> Salvar comentário</button>
+                    </section>
+                </div>
+                <div class="image-and-buttons">
+                    <figure>
+                        <img src="" alt="food">
+                    </figure>
+
+                    <div class="buttons">
+                        <div class="counter">
+                            <button class="btn decrease">-</button>
+                            <p id="quantity">1</p>
+                            <button class="btn increase">+</button>
+                        </div>
+                        <div class="add">
+                           <a href=""><p>Adicionar</p> <p id="total-price">total value</p></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

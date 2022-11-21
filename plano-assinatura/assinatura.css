@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+    /* variáveis de cor*/
+    --cor-do-fundo: #F7F7F7;
+
+    --cor-viva-1: #FF6516;
+    --cor-viva-1-hover: #f05f17;
+    --cor-viva-1-escura: #dd5816;
+
+    --cor-viva-2: #588A24;
+    --cor-viva-2-clara: #6ba72a9a;
+
+    --cor-viva-3: #FFC666;
+    --cor-viva-3-escura: #f1be64;
+
+    --cor-font-opaca1: #DBDBDB;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    /* a cada 1rem será considera 10px */
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------------------- HEADER e MENU --------------------------- */
+header {
+    background-color: #F7F7F7;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+
+    width: 95%;
+    max-width: 1280px;
+    height: 64px;
+
+    margin: auto;
+    gap: 20px;
+}
+
+header img {
+    width: 14rem;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header ul li a #current-page{
+    color: #FD671A;
+}
+
+
+header nav .account {
+    display: flex;
+    width: 90%;
+    justify-content: end;
+    align-items: center;
+}
+
+header nav .account a {
+    color: var(--cor-viva-1-escura);
+    font-weight: 500;
+}
+
+header nav .account button {
+    background-color: var(--cor-viva-1);
+    width: 8rem;
+    height: 3.5rem;
+
+    font-weight: 600;
+    font-size: 1.4rem;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 0.5rem;
+
+    transition: all .3s;
+}
+
+header nav .account button a{
+    color: white;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 1.4rem 2.4rem;
+    transition: all 250ms linear 0s;
+    color: black;
+}
+
+/* hover */
+
+header nav ul li a:hover {
+    transition: all .2s;
+    background: rgba(212, 212, 212, 0.247)
+}
+
+header nav .account a:hover {
+    background: none;
+    font-weight: 600;
+    color: var(--cor-viva-1);
+}
+
+header nav .account button:hover {
+    background-color: var(--cor-viva-1-hover);
+    scale: 1.05;
+}
+
+header nav .account button a:hover{
+    color: white;
+}
+
+/* ------------------------------- MAIN --------------------------- */
+
+main .title{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+main .title h1{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+
+main section.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+
+    height: 90vh;
+
+}
+
+main section.cards .card{   
+    height: 500px;
+    width: 600px;
+    border-radius: 5px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 8px rgba(136, 136, 136, 0.507);
+}
+
+main section.cards .card .head-card{
+    background-color: var(--cor-viva-2);
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+
+    height: 200px;
+    padding: 15px;
+    line-height: 50px;
+}
+
+main section.cards .card .head-card#diferent-color{
+    background-color: var(--cor-viva-1);
+}
+
+main section.cards .card .head-card h2{
+    font-weight: 400;
+}
+
+main section.cards .card .head-card strong{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+main section.cards .card .body-card{
+    line-height: 70px;
+}
+
+main section.cards .card .body-card ul{
+    list-style: none;
+}
+
+main section.cards .card .body-card .button-card{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+
+    background-color: var(--cor-viva-1);
+    color: white;
+    transition: all .3s ease-in-out;
+}
+
+main section.cards .card .body-card .button-card:hover{
+    background-color: var(--cor-viva-1-hover);
+}

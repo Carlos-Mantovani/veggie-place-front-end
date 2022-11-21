@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+    /* variáveis de cor*/
+    --cor-do-fundo: #fcfcfc;
+
+    --cor-viva-1: #FF6516;
+    --cor-viva-1-hover: #f05f17;
+    --cor-viva-1-escura: #dd5816;
+
+    --cor-viva-2: #588A24;
+    --cor-viva-2-clara: #6ba72a9a;
+
+    --cor-viva-3: #FFC666;
+    --cor-viva-3-escura: #f1be64;
+
+    --cor-font-opaca1: #DBDBDB;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    /* a cada 1rem será considera 10px */
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--cor-do-fundo);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------------------- HEADER e MENU --------------------------- */
+
+header {
+    background-color: #eeeeee;;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+
+    width: 95%;
+    max-width: 1280px;
+    height: 64px;
+
+    margin: auto;
+    gap: 20px;
+}
+
+header img {
+    width: 14rem;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header ul li a #current-page{
+    color: #FD671A;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 1.4rem 2.4rem;
+    transition: all 250ms linear 0s;
+    color: black;
+}
+
+header nav form {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+header nav form input{
+    width: 370px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 5px 5px 30px;
+
+    background-color: #D8D7D7;
+}
+
+header nav .profile-and-cart{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* hover */
+
+header nav ul li a:hover {
+    transition: all .2s;
+    background: rgba(212, 212, 212, 0.247)
+}
+
+/* ------------------------------- BANNER --------------------------- */
+
+section.banners{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.banners .container{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 1200px;
+    padding: 55px;
+    gap: 30px;
+}
+
+section.banners .container .big-banner{
+    background-color: var(--cor-viva-1);
+    width: 520px;
+    height: 510px;
+
+    border-radius: 20px;
+}
+
+section.banners .container .small-banner{
+    background-color: var(--cor-viva-2);
+    width: 520px;
+    height: 225px;
+
+    border-radius: 20px;
+}
+
+section.banners .container .divider{
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+
+section.banners .container .small-banner:last-child{
+    background-color: var(--cor-viva-3);
+}
+
+/* ------------------------------- MAIN ------------------------------- */
+main{
+    margin-bottom: 100px;
+}
+/* ------ Melhores do Mês ------ */
+main section.bests-restaunts-month{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section.bests-restaunts-month .container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 50px;
+}
+
+main section.bests-restaunts-month .container .boxs{
+    display: flex;
+    gap: 35px;
+
+    margin-top: 50px;
+}
+
+main section.bests-restaunts-month .container .boxs .box-restaurant{
+    border: 1px solid;
+    width: 355px;
+    height: 180px;
+    border-radius: 8px;
+
+}
+
+/* ------ Filtros ------ */
+
+main section.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section.products .category-filter{
+    width: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+main section.products .category-filter .clean-button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+main section.products .category-filter .clean-button button{
+    background-color: var(--cor-viva-1);
+    color: white;
+    width: 170px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    cursor: pointer;
+
+    box-shadow: 0 2px 3px rgba(24, 24, 24, 0.411);
+
+}
+
+main section.products .category-filter .filters{
+    display: flex;
+    gap: 20px;
+    
+}
+
+main section.products .category-filter .filters select,
+main section.products .category-filter .filters button{
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    border: 2px solid var(--cor-font-opaca1);
+    background: none;
+
+    color: #000;
+    font-weight: 600;
+
+    box-shadow: 0 5px 3px #cecece;
+    transition: all .3s ease;
+}
+
+/* hover */
+main section.products .category-filter .filters button:hover{
+    cursor: pointer;
+    color: #FD671A;
+    border: 2px solid #FD671A;
+    box-shadow: 0 5px 3px #cc5215b6;
+}
+
+/* ------ Produtos ------ */
+
+main section.products .products-boxs{
+    display: grid;
+    grid-template-columns: repeat(4, 250px); 
+    grid-template-rows: 330px;
+    column-gap: 30px;
+    justify-content: center;
+
+    margin-top: 80px;
+    
+}
+
+main section.products .products-boxs .box-product{
+    border: 2px solid var(--cor-font-opaca1);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: black;
+    box-shadow: 0 3px 3px grey;
+    transition: all .2s ease-in-out;
+}
+
+main section.products .products-boxs .box-product figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section.products .products-boxs .box-product figure figcaption{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+}
+
+main section.products .products-boxs .box-product figure figcaption .product-value{
+    margin-top: 10px;
+}
+
+/* hover */
+main section.products .products-boxs .box-product:hover{
+    border: 2px solid rgb(196, 196, 196);
+    box-shadow: 0 5px 5px grey;
+}
+
+/* ------------------------------- FOOTER ------------------------------- */
+
+footer {
+    background-image: url("../IMG/legumes-background.svg");
+    background-color: #FFC666;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ------ Section mais informações ------ */
+footer section.more-info {
+    display: flex;
+    width: 100%;
+    max-width: 1700px;
+}
+
+footer section.more-info .box {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+footer section.more-info .box ul {
+    list-style: none;
+    line-height: 45px;
+}
+
+footer section.more-info .box ul li a {
+    color: black;
+    transition: all .2s ease;
+}
+
+/* hover */
+
+footer section.more-info .box ul li a:hover {
+    color: var(--cor-viva-1);
+}
+
+
+/* ------ Section copyright ------ */
+
+footer section.copyright-and-terms {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1400px;
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer section.copyright-and-terms .copyright-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer section.copyright-and-terms .terms-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+footer section.copyright-and-terms .terms-links ul li a {
+    color: black;
+}
+
+/* hover */
+footer section.copyright-and-terms .terms-links ul li a:hover {
+    color: var(--cor-viva-1);
+}

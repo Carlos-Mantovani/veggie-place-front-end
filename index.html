@@ -18,10 +18,10 @@
             <a href="/"><img src="./img/logo_veggie_place_larger-width.png" alt="logo-vp"></a>
             <nav>
                 <ul>
-                    <li><a href="../sobre-nos/about-us.html">Quem somos</a></li>
-                    <li><a href="../entregador/entregador.html">Entregador</a></li>
-                    <li><a href="../restaurante/restaurant.html">Restaurante</a></li>
-                    <li><a href="../Mercado/mercado.html">Mercado</a></li>
+                    <li><a href="./sobre-nos/about-us.html">Quem somos</a></li>
+                    <li><a href="./entregador/entregador.html">Entregador</a></li>
+                    <li><a href="./restaurante/restaurant.html">Restaurante</a></li>
+                    <li><a href="./Mercado/mercado.html">Mercado</a></li>
                 </ul>
                 <div class="account">
                     <div class="user" style="display: flex; align-items: center; margin-right: 24px;">
@@ -58,7 +58,7 @@
     <main>
         <section class="cards-categorie">
             <div class="container">
-                <a href="../restaurante/restaurant.html" class="card">
+                <a href="./restaurante/restaurant.html" class="card">
                     <div class="content">
                         <h3>Restaurante</h3>
                         <img src="./img/imagem-restaurante.svg" alt="img1">
@@ -67,7 +67,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="../Mercado/mercado.html" class="card" id="market">
+                <a href="./Mercado/mercado.html" class="card" id="market">
                     <div class="content">
                         <h3>Mercado</h3>
                         <img src="./img/imagem-mercado.svg" alt="img2" id="img-market">
@@ -92,7 +92,7 @@
             <div class="content-best-seller">
                 <button class="arrow-left control" aria-label="Previous image">◀</button>
                 <div class="boxs">
-                    <a href="../produto-mercado/produto.html" class="item current-item">
+                    <a href="./produto-mercado/produto.html" class="item current-item">
                         <figure>
                             <img src="./img/image 32.svg" alt="image-produto">
                             <figcaption>
@@ -101,7 +101,7 @@
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="../produto-mercado/produto.html" class="item">
+                    <a href="./produto-mercado/produto.html" class="item">
                         <figure>
                             <img src="./img/image 32.svg" alt="image-produto">
                             <figcaption>
@@ -110,7 +110,7 @@
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="../produto-mercado/produto.html" class="item">
+                    <a href="./produto-mercado/produto.html" class="item">
                         <figure>
                             <img src="./img/image 32.svg" alt="image-produto">
                             <figcaption>
@@ -119,7 +119,7 @@
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="../produto-mercado/produto.html" class="item">
+                    <a href="./produto-mercado/produto.html" class="item">
                         <figure>
                             <img src="./img/image 32.svg" alt="image-produto">
                             <figcaption>
@@ -128,7 +128,7 @@
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="../produto-mercado/produto.html" class="item">
+                    <a href="./produto-mercado/produto.html" class="item">
                         <figure>
                             <img src="./img/image 32.svg" alt="image-produto">
                             <figcaption>
@@ -137,7 +137,7 @@
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="../produto-mercado/produto.html" class="item">
+                    <a href="./produto-mercado/produto.html" class="item">
                         <figure>
                             <img src="./img/image 32.svg" alt="image-produto">
                             <figcaption>
@@ -146,7 +146,7 @@
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="../produto-mercado/produto.html" class="item">
+                    <a href="./produto-mercado/produto.html" class="item">
                         <figure>
                             <img src="./img/image 32.svg" alt="image-produto">
                             <figcaption>
@@ -155,7 +155,7 @@
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="../produto-mercado/produto.html" class="item">
+                    <a href="./produto-mercado/produto.html" class="item">
                         <figure>
                             <img src="./img/image 32.svg" alt="image-produto">
                             <figcaption>
@@ -285,7 +285,7 @@
                                 Cadastre seu restaurante ou o seu mercado.
                             </p>
 
-                            <a href="/cadastro/cadastro-loja.html">Saiba mais</a>
+                            <a href="./cadastro/cadastro-loja.html">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -353,7 +353,7 @@
                 }
             });
             const user = await data.json();
-            username.innerText = user.username;
+            username.innerText = user.username.split(" ")[0];
             userImage.src = user.photo;
         }
 

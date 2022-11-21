@@ -1,0 +1,486 @@
+/* fonte importada */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* Estilização Global */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+ }
+
+ body{
+    background-color: #F7F7F7;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* border: 2px solid red; */
+
+    margin: 0 auto;
+    padding: 1px;
+    
+}
+
+a{
+    color: #3E3E3E;
+}
+
+/* Header - Barra de navegação */
+
+.nav{
+    background-color: #F7F7F7;
+    color:black;
+    padding: 0px 35px 0px 0px;
+    height: 2.7rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.menu{
+    width: 50%;
+    margin-left: 150px;
+
+}
+
+.menu a{
+    margin-right: 15px;
+}
+
+.menu a:last-child{
+    margin-right: 0;
+}
+
+.login{
+    width: 50%;
+    text-align: right;
+}
+
+#lCCount{
+    color: #E25C17;
+    font-weight: 500;
+}
+
+#bEnter{
+    margin-left: 15px;
+    padding: 5px;
+    width: 80px;
+    height: 35px;
+    cursor: pointer;
+    
+    background-color: #FD671A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    font-weight: 600;
+}
+
+/* MAIN */
+
+main{
+    width: 50vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+   
+
+    
+
+/* Main - Banner */
+
+
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 1920px; /*Provisório*/
+    height: 329px;
+
+    background-color: #588A24;
+    color: white;
+}
+
+.banner h1{
+    font-weight: 600;
+}
+
+#textBanner{
+    margin-top: 35px;
+
+    color: #DBDBDB;
+}
+
+#lBlog{
+    color: #82FF00;
+}
+
+.search{
+    margin-top: 25px;
+    display: flex;
+}
+
+#inpSearch{
+    width: 683px;
+    height: 50px;
+
+    border: none;
+    border-radius: 4px;
+
+}
+
+#bSearch{
+    width: 139px;
+    height: 50px;
+
+    margin-left: 10px;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    background-color: #FD671A;
+    color: white;
+
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/* Main - Restaurante e Marcado */
+.cards1{
+    /* border: 1px solid red; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 5px;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+.container-card{
+    display: flex;
+
+    /* border: 1px solid black; */
+    margin: 5px;
+
+}
+
+.container-card .space{
+    width: 55px;
+    height: 214px;
+
+}
+
+.container-card h2{
+    font-weight: 600;
+}
+
+
+
+.cardRestBack{
+    background-color: #FF6516;
+    color: white;
+
+    font-size: 20px;
+
+    border-radius: 20px;
+
+    width: 504px;
+    height: 314px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+#bRestaurant,#bMarket{
+    border: none;
+    border-radius: 12px;
+
+    width: 166px;
+    height: 46px;
+
+    cursor: pointer;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.material-icons{
+    margin-left: 10px;
+}
+
+#bRestaurant{
+    background-color: #df5814a6;
+}
+
+#bMarket{
+    background-color: #6ba72a9a;
+}
+
+.cardMarkBack{
+    background-color: #588A24;
+    color: white;
+
+    font-size: 20px;
+
+    border-radius: 20px;
+
+    width: 504px;
+    height: 314px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 90%;
+    height: 100%;
+    
+
+}
+
+.cardCosmetic{
+    /* border: 1px solid black; */
+    margin-top: 90px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#backgroundCosmetic{
+    background-color: #FFC666;
+    
+    width: 198px;
+    height: 57px;
+
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#backgroundCosmetic img{
+    /* border: 1px solid red; */
+    height: 84px;
+
+    margin-bottom: 18px;
+}
+
+#bCosmetic{
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bCosmetic span{
+    margin-left: 0;
+}
+
+.row-divider{ /* substituir por um border pois, este já esta obsoleto no HTML5 */
+    width: 1920px; /*proivsório*/
+    size: 100px;
+    opacity: 0.3;
+
+}
+/* Melhores da semana 1 */
+.best{
+    margin: 70px;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 1810px;
+    height: 300px;
+
+    align-items: flex-start;
+}
+
+#h3best{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.boxs{
+    margin-top: 20px;
+
+    display: flex;
+
+    max-width: 1732px;
+    padding: 10px;
+
+    overflow-x: auto;
+}
+
+/* Barra de rolagem */
+
+.boxs::-webkit-scrollbar{
+        width: 5px;
+        height: 5px;
+        background-color: #F7F7F7;
+}
+
+.boxs::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 0, 0);
+}
+/* cada um dos melhores da semana */
+.boxs .item{
+    border: 1px solid #DCDCDC;
+    border-radius: 8px;
+    
+    min-width: 270px;
+    height: 132px;
+    line-height: 132px;
+
+    text-align: center;
+
+    margin-right: 20px;
+}
+
+/* Trabalhe conosco */
+
+.workWithUs{
+    /* border: 2px solid red; */
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 55px;
+}
+
+.workWithUs h2{
+    color: #2E2C36;
+
+    font-size: 72px;
+    font-weight: 400;
+}
+
+.workWithUs h2 #destqVP{
+    color: #FD671A;
+
+    font-weight: 500;
+}
+
+.container-cardsWork{
+    margin-top: 25px;
+    /* border: 2px solid black; */
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cards-work{
+    border: 1px solid #DCDCDC;
+    border-radius: 8px;
+
+    width: 480px;
+    height: 336px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 60px;
+}
+
+.cards-work h4{
+    font-weight: 400;
+    font-size: 20px;
+
+    color: #2E2C36;
+}
+
+.cards-work p{
+    font-weight: 300;
+    color: #6A696E;
+}
+
+.cards-work .bCards{
+    margin-top: 20px;
+
+    width: 305px;
+    height: 50px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: gray;
+}
+
+/* Rodapé */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+
+    width: 1920px;
+    height: 100px;
+    padding: 20px;
+
+}
+
+.socialFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-right: 100px;
+    
+}
+
+.socialFooter p{
+    margin-bottom: 10px;
+}
+
+.socialFooter ul{
+    list-style: none;
+    display: flex;
+}
+
+.socialFooter ul li{
+    margin-right: 10px;
+}

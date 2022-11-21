@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+    /* variáveis de cor*/
+    --cor-do-fundo: #fcfcfc;
+
+    --cor-viva-1: #FF6516;
+    --cor-viva-1-hover: #f05f17;
+    --cor-viva-1-escura: #dd5816;
+
+    --cor-viva-2: #588A24;
+    --cor-viva-2-clara: #6ba72a9a;
+
+    --cor-viva-3: #FFC666;
+    --cor-viva-3-escura: #f1be64;
+
+    --cor-font-opaca1: #DBDBDB;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    /* a cada 1rem será considera 10px */
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--cor-do-fundo);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------------------- HEADER e MENU --------------------------- */
+
+header {
+    background-color: #eeeeee;;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+
+    width: 95%;
+    max-width: 1280px;
+    height: 64px;
+
+    margin: auto;
+    gap: 20px;
+}
+
+header img {
+    width: 14rem;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header ul li a #current-page{
+    color: #FD671A;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 1.4rem 2.4rem;
+    transition: all 250ms linear 0s;
+    color: black;
+}
+
+header nav form {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+header nav form input{
+    width: 370px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 5px 5px 30px;
+
+    background-color: #D8D7D7;
+}
+
+header nav .profile-and-cart {
+    display: flex;
+    width: 38%;
+    justify-content: end;
+    align-items: center;
+
+}
+
+/* hover */
+
+header nav ul li a:hover {
+    transition: all .2s;
+    background: rgba(212, 212, 212, 0.247)
+}
+
+/* ------------------------------- BANNER --------------------------- */
+section.banner{
+    background-color: var(--cor-viva-2);
+    height: 350px;
+}
+
+section.banner .container{
+    color: white;
+    width: 100%;
+    max-width: 1900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 100px;
+}
+
+section.banner .container .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.banner .container .text h2{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 500;
+}
+
+section.banner .container .text p{
+    font-size: 18px;
+    max-width: 560px;
+    margin-top: 20px;
+}
+
+/* ------------------------------- MAIN--------------------------- */
+/* -------------- Sobre nós -------------- */
+
+main article.about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 120px;
+}
+
+main article.about-us .text{
+    max-width: 900px;
+    border: 1px solid var(--cor-font-opaca1);
+    padding: 20px;
+    margin-bottom: 50px;
+
+    border-radius: 20px;
+}
+
+main article.about-us .text h3{
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main article.about-us .text p{
+    font-size: 20px;
+}
+
+/* -------------- Desenvolvedores -------------- */
+main section.developers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 80px;
+}
+
+main section.developers .container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main section.developers .container h3{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+main section.developers .container .boxs{
+    display: grid;
+    grid-template-columns: repeat(4, 260px); 
+    grid-template-rows: repeat(3, 310px);
+    column-gap: 30px;
+}
+
+main section.developers .container .boxs .box-member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    border: 1px solid;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}   
+
+/* ------------------------------- FOOTER ------------------------------- */
+
+footer {
+    background-image: url("../IMG/legumes-background.svg");
+    background-color: #FFC666;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 90px;
+}
+
+/* ------ Section mais informações ------ */
+footer section.more-info {
+    display: flex;
+    width: 100%;
+    max-width: 1700px;
+}
+
+footer section.more-info .box {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+footer section.more-info .box ul {
+    list-style: none;
+    line-height: 45px;
+}
+
+footer section.more-info .box ul li a {
+    color: black;
+    transition: all .2s ease;
+}
+
+/* hover */
+
+footer section.more-info .box ul li a:hover {
+    color: var(--cor-viva-1);
+}
+
+
+/* ------ Section copyright ------ */
+
+footer section.copyright-and-terms {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1400px;
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer section.copyright-and-terms .copyright-text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer section.copyright-and-terms .terms-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+footer section.copyright-and-terms .terms-links ul li a {
+    color: black;
+}
+
+/* hover */
+footer section.copyright-and-terms .terms-links ul li a:hover {
+    color: var(--cor-viva-1);
+}
+

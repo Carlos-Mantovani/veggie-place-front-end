@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="mercado.css">
+
+    <script src="../Mercado/heart.js" defer></script>
+    <title>Restaurant</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html"><img src="../IMG/logo_veggie_place_larger-width.png" alt="logo-vp" title="voltar ao início"></a>
+
+            <nav>
+                <ul>
+                    <li><a href="../sobre-nos/about-us.html">Quem somos</a> </li>
+                    <li><a href="../entregador/entregador.html">Entregador</a></li>
+                    <li><a href="../restaurante/restaurant.html">Restaurante</a> </li>
+                    <li><a href="../Mercado/mercado.html"><span id="current-page">Mercado</span></li>
+                </ul>
+                <form action="">
+                    <label for="search"></label>
+                    <input type="search" name="search" id="search">
+                </form>
+                <div class="profile-and-cart">
+                    <ul>
+                        <li>perfil</li>
+                    </ul>
+                    <a href="#">carrinho</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <div>
+                <h1>Encomendem suas compras diárias.</h1>
+
+            </div>
+            <div>
+                <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="256" height="256" fill="url(#pattern0)" />
+                    <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_193_1360" transform="scale(0.00390625)" />
+                        </pattern>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="box-content">
+            <section class="box-select">
+                <div class="box-type">
+                    <ion-icon name="storefront" class="icon-type"></ion-icon>
+                    <h2>Mercado</h2>
+                </div>
+                <div class="box-type">
+                    <ion-icon name="basket" class="icon-type"></ion-icon>
+                    <h2>Legumes</h2>
+                </div>
+                <div class="box-type">
+                    <ion-icon name="nutrition" class="icon-type"></ion-icon>
+                    <h2>Frutas</h2>
+                </div>
+                <div class="box-type">
+                    <ion-icon name="brush" class="icon-type"></ion-icon>
+                    <h2>Maquiagem</h2>
+                </div>
+                <div class="box-type">
+                    <ion-icon name="briefcase" class="icon-type"></ion-icon>
+                    <h2>Cosmeticos</h2>
+                </div>
+            </section>
+
+            <section class="box-popular">
+                <h1>Produtos Populares</h1>
+                <button class="btn-clear">Limpar</button>
+            </section>
+
+            <section class="box-filter">
+                <select class="select">
+                    <option value="none" selected>Ordenar</option>
+                    <option value="valor1">Valor 1</option>
+                    <option value="valor2">Valor 2</option>
+                </select>
+                <button class="btn-filter">Preço</button>
+                <button class="btn-filter">Avaliação</button>
+                <button class="btn-filter">Distancia</button>
+                <button class="btn-filter">Entrega Gratis</button>
+            </section>
+
+            <section class="box-product-popular">
+                <div class="container-product">
+                    <button class="like-button"><ion-icon name="heart" class="heart-icon"></ion-icon></button>
+                    <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+                    <a class="box-product" href="../produto-mercado/produto.html">
+                        <img src="../IMG/leite-vegano.svg" alt="">
+                        <p>Bebida de Caju Pacific Natural -Orgânico-</p>
+                    </a>
+                    <div class="box-price">
+                        <p>R$5,99</p>
+                    </div>
+                </div>
+                <div class="container-product">
+                    <button class="like-button"><ion-icon name="heart" class="heart-icon"></ion-icon></button>
+                    <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+                    <a class="box-product" href="../produto-mercado/produto.html">
+                        <img src="../IMG/leite-vegano.svg" alt="">
+                        <p>Bebida de Caju Pacific Natural -Orgânico-</p>
+                    </a>
+                    <div class="box-price">
+                        <p>R$5,99</p>
+                    </div>
+                </div>
+                <div class="container-product">
+                    <button class="like-button"><ion-icon name="heart" class="heart-icon"></ion-icon></button>
+                    <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+                    <a class="box-product" href="../produto-mercado/produto.html">
+                        <img src="../IMG/leite-vegano.svg" alt="">
+                        <p>Bebida de Caju Pacific Natural -Orgânico-</p>
+                    </a>
+                    <div class="box-price">
+                        <p>R$5,99</p>
+                    </div>
+                </div>
+                <div class="container-product">
+                    <button class="like-button"><ion-icon name="heart" class="heart-icon"></ion-icon></button>
+                    <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+                    <a class="box-product" href="../produto-mercado/produto.html">
+                        <img src="../IMG/leite-vegano.svg" alt="">
+                        <p>Bebida de Caju Pacific Natural -Orgânico-</p>
+                    </a>
+                    <div class="box-price">
+                        <p>R$5,99</p>
+                    </div>
+                </div>
+                <div class="container-product">
+                    <button class="like-button"><ion-icon name="heart" class="heart-icon"></ion-icon></button>
+                    <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+                    <a class="box-product" href="../produto-mercado/produto.html">
+                        <img src="../IMG/leite-vegano.svg" alt="">
+                        <p>Bebida de Caju Pacific Natural -Orgânico-</p>
+                    </a>
+                    <div class="box-price">
+                        <p>R$5,99</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="box-title">
+                <h2>Supermecado</h2>
+            </div>
+
+            <section class="box-market">
+                <div class="container-market">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/d/dd/Logomarca_do_P%C3%A3o_de_A%C3%A7%C3%BAcar_%28supermercado%29.png"
+                        alt="">
+                    <p>Pão de Açucar</p>
+                </div>
+                <div class="container-market">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/d/dd/Logomarca_do_P%C3%A3o_de_A%C3%A7%C3%BAcar_%28supermercado%29.png"
+                        alt="">
+                    <p>Pão de Açucar</p>
+                </div>
+                <div class="container-market">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/d/dd/Logomarca_do_P%C3%A3o_de_A%C3%A7%C3%BAcar_%28supermercado%29.png"
+                        alt="">
+                    <p>Pão de Açucar</p>
+                </div>
+                <div class="container-market">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/d/dd/Logomarca_do_P%C3%A3o_de_A%C3%A7%C3%BAcar_%28supermercado%29.png"
+                        alt="">
+                    <p>Pão de Açucar</p>
+                </div>
+                <div class="container-market">
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/d/dd/Logomarca_do_P%C3%A3o_de_A%C3%A7%C3%BAcar_%28supermercado%29.png"
+                        alt="">
+                    <p>Pão de Açucar</p>
+                </div>
+            </section>
+
+            <div class="box-title-promot">
+                <h2>Promoções</h2>
+            </div>
+
+            <section class="box-carousel-product">
+                <ion-icon name="caret-back-outline" class="arrow-left-icon" onclick="sliderScrollLeft()"></ion-icon>
+                <div class="container-product">
+                    <ion-icon name="heart" class="heart-icon"></ion-icon>
+                    <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+                    <a class="box-product" href="../produto-mercado/produto.html">
+                        <img src="../IMG/creme-vegan.svg" alt="">
+                        <p>Base Líquida Checkmatte Faces Natura</p>
+                    </a>
+                    <div class="box-price">
+                        <p>R$29,90</p>
+                    </div>
+                </div>
+                <div class="container-product">
+                    <ion-icon name="heart" class="heart-icon"></ion-icon>
+                    <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+                    <a class="box-product" href="../produto-mercado/produto.html">
+                        <img src="../IMG/creme-vegan.svg" alt="">
+                        <p>Base Líquida Checkmatte Faces Natura</p>
+                    </a>
+                    <div class="box-price">
+                        <p>R$29,90</p>
+                    </div>
+                </div>
+                <div class="container-product">
+                    <ion-icon name="heart" class="heart-icon"></ion-icon>
+                    <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+                    <a class="box-product" href="../produto-mercado/produto.html">
+                        <img src="../IMG/creme-vegan.svg" alt="">
+                        <p>Base Líquida Checkmatte Faces Natura</p>
+                    </a>
+                    <div class="box-price">
+                        <p>R$29,90</p>
+                    </div>
+                </div>
+                <div class="container-product">
+                    <ion-icon name="heart" class="heart-icon"></ion-icon>
+                    <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+                    <a class="box-product" href="../produto-mercado/produto.html">
+                        <img src="../IMG/creme-vegan.svg" alt="">
+                        <p>Base Líquida Checkmatte Faces Natura</p>
+                    </a>
+                    <div class="box-price">
+                        <p>R$29,90</p>
+                    </div>
+                </div>
+                <div class="container-product">
+                    <ion-icon name="heart" class="heart-icon"></ion-icon>
+                    <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+                    <a class="box-product" href="../produto-mercado/produto.html">
+                        <img src="../IMG/creme-vegan.svg" alt="">
+                        <p>Base Líquida Checkmatte Faces Natura</p>
+                    </a>
+                    <div class="box-price">
+                        <p>R$29,90</p>
+                    </div>
+                </div>
+                <div class="container-product">
+                    <ion-icon name="heart" class="heart-icon"></ion-icon>
+                    <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+                    <a class="box-product" href="../produto-mercado/produto.html">
+                        <img src="../IMG/creme-vegan.svg" alt="">
+                        <p>Base Líquida Checkmatte Faces Natura</p>
+                    </a>
+                    <div class="box-price">
+                        <p>R$29,90</p>
+                    </div>
+                </div>
+                <div class="container-product">
+                    <ion-icon name="heart" class="heart-icon"></ion-icon>
+                    <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+                    <a class="box-product" href="../produto-mercado/produto.html">
+                        <img src="../IMG/creme-vegan.svg" alt="">
+                        <p>Base Líquida Checkmatte Faces Natura</p>
+                    </a>
+                    <div class="box-price">
+                        <p>R$29,90</p>
+                    </div>
+                </div>
+                <div class="container-product">
+                    <ion-icon name="heart" class="heart-icon"></ion-icon>
+                    <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+                    <a class="box-product" href="../produto-mercado/produto.html">
+                        <img src="../IMG/creme-vegan.svg" alt="">
+                        <p>Base Líquida Checkmatte Faces Natura</p>
+                    </a>
+                    <div class="box-price">
+                        <p>R$29,90</p>
+                    </div>
+                </div>
+                <div class="container-product">
+                    <ion-icon name="heart" class="heart-icon"></ion-icon>
+                    <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+                    <a class="box-product" href="../produto-mercado/produto.html">
+                        <img src="../IMG/creme-vegan.svg" alt="">
+                        <p>Base Líquida Checkmatte Faces Natura</p>
+                    </a>
+                    <div class="box-price">
+                        <p>R$29,90</p>
+                    </div>
+                </div>
+                <div class="container-product">
+                    <ion-icon name="heart" class="heart-icon"></ion-icon>
+                    <ion-icon name="cart-outline" class="cart-icon"></ion-icon>
+                    <a class="box-product" href="../produto-mercado/produto.html">
+                        <img src="../IMG/creme-vegan.svg" alt="">
+                        <p>Base Líquida Checkmatte Faces Natura</p>
+                    </a>
+                    <div class="box-price">
+                        <p>R$29,90</p>
+                    </div>
+                </div>
+                <ion-icon name="caret-forward-outline" class="arrow-right-icon" onclick="sliderScrollRight()">
+                </ion-icon>
+            </section>
+
+        </div>
+    </main>
+    <footer>
+        <section class="more-info">
+            <div class="box" id="box-vp">
+                <strong>Veggie Place</strong>
+                <ul>
+                    <li><a href="#">Site institucional</a></li>
+                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="#">Carreiras</a></li>
+                </ul>
+            </div>
+            <div class="box" id="box-discover">
+                <strong>Descubra</strong>
+                <ul>
+                    <li><a href="">Cadastre seu Restaurante ou Mercado</a></li>
+                </ul>
+            </div>
+            <div class="box" id="box-social">
+                <strong>Social</strong>
+                <ul>
+                    <li> <a href="#">Facebook</a></li>
+                    <li> <a href="#">Youtube</a></li>
+                    <li> <a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="copyright-and-terms">
+            <div class="copyright-text">
+                <p>
+                    © Copyright 2021 - iFood - Todos os direitos reservados iFood com Agência de Restaurantes Online S.A.
+                </p>
+            </div>
+            <div class="terms-links">
+                <ul>
+                    <li><a href="#">Termos e condições de uso</a></li>
+                    <li><a href="#">Código de conduta</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                    <li><a href="#">Dicas de segurança</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="./script.js"></script>
+</body>
+
+</html>

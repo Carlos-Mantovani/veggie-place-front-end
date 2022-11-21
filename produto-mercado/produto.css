@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+    /* variáveis de cor*/
+    --cor-do-fundo: #F7F7F7;
+
+    --cor-viva-1: #FF6516;
+    --cor-viva-1-hover: #f05f17;
+    --cor-viva-1-escura: #dd5816;
+
+    --cor-viva-2: #588A24;
+    --cor-viva-2-clara: #6ba72a9a;
+
+    --cor-viva-3: #FFC666;
+    --cor-viva-3-escura: #f1be64;
+
+    --cor-font-opaca1: #DBDBDB;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    /* a cada 1rem será considera 10px */
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------------------- HEADER e MENU --------------------------- */
+header {
+    background-color: #eeeeee;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+
+    width: 95%;
+    max-width: 1280px;
+    height: 64px;
+
+    margin: auto;
+    gap: 20px;
+}
+
+header img {
+    width: 14rem;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 1.4rem 2.4rem;
+    transition: all 250ms linear 0s;
+    color: black;
+}
+
+header nav .profile-and-cart {
+    display: flex;
+    width: 38%;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+/* hover */
+
+header nav ul li a:hover {
+    transition: all .2s;
+    background: rgba(212, 212, 212, 0.247)
+}
+
+
+/* ------------------------------- MAIN ------------------------------- */
+
+/*------------ Produto selecionado -----------*/
+
+main section.selected-product{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section.selected-product .container{
+    border: 3px solid var(--cor-viva-1);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1800px;
+    height: 700px;
+
+    display: flex;
+}
+
+main section.selected-product .container .box-text{
+    width: 50%;
+    padding: 20px;
+}
+
+main section.selected-product .container .box-text .info-product h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    padding: 0 0 0 10px;
+}
+
+main section.selected-product .container .box-text .info-product p{
+    font-size: 20px;
+    padding: 0 0 15px  10px;
+    border-bottom: 2px solid;
+}
+
+main section.selected-product .container .box-text .value-and-inventory{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+main section.selected-product .container .box-text .value-and-inventory p:first-child{
+    font-size: 25px;
+    padding: 0 0 0 10px;
+}
+
+main section.selected-product .container .box-text .buttons{
+    display: flex;
+    margin-top: 350px;
+    justify-content: space-between;
+    /* gap: 40px; */
+}
+
+main section.selected-product .container .box-text .buttons .counter{
+    display: flex;
+    align-items: center;
+}
+
+main section.selected-product .container .box-text .buttons .counter button{
+    width: 55px;
+    height: 52px;
+    font-size: 30px;
+    border-radius: 20px;
+    border: none;
+
+    background-color: var(--cor-viva-1);
+    color: white;
+    cursor: pointer;
+}
+
+main section.selected-product .container .box-text .buttons .counter p{
+    padding: 10px;
+}
+
+main section.selected-product .container .box-text .buttons .add a{
+    background-color: var(--cor-viva-1);
+
+    width: 340px;
+    height: 70px;
+    border-radius: 20px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    color: white;
+
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/*------------ Produto selecionado Imagem -----------*/
+
+main section.selected-product .container figure{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+/*------------ Sugestão de Produtos -----------*/
+
+main section.suggestions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 80px;
+}
+
+main section.suggestions .title{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+main section.suggestions .title h3{
+    font-size: 25px;
+    font-weight: 400;
+}
+main section.suggestions .products-boxs{
+    display: grid;
+    grid-template-columns: repeat(4, 250px); 
+    grid-template-rows: 330px;
+    column-gap: 30px;
+    justify-content: center;
+
+    margin-bottom: 30px;
+    
+}
+
+main section.suggestions .products-boxs .box-product{
+    border: 2px solid var(--cor-font-opaca1);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: black;
+    box-shadow: 0 3px 3px grey;
+    transition: all .2s ease-in-out;
+}
+
+main section.suggestions .products-boxs .box-product figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section.suggestions .products-boxs .box-product figure figcaption{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+}
+
+main section.suggestions .products-boxs .box-product figure figcaption .product-value{
+    margin-top: 10px;
+}
+
+/* Hover */
+
+main section.suggestions .products-boxs .box-product:hover{
+    border: 2px solid rgb(196, 196, 196);
+    box-shadow: 0 5px 5px grey;
+}
