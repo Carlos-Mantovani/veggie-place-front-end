@@ -91,7 +91,8 @@
             <h3>Os mais vendidos <span><img src="./img/icone-best-seller.svg" alt="icon-bestSeller"></span></h3>
             <div class="content-best-seller">
                 <button class="arrow-left control" aria-label="Previous image">◀</button>
-                <div class="boxs">
+                <div class="boxes products">
+                    <!--
                     <a href="./produto-mercado/produto.html" class="item current-item">
                         <figure>
                             <img src="./img/image 32.svg" alt="image-produto">
@@ -164,6 +165,7 @@
                             </figcaption>
                         </figure>
                     </a>
+                    -->
                 </div>
                 <button class="arrow-right control" aria-label="Next Image">▶</button>
 
@@ -174,7 +176,8 @@
             <h3>Marcas que temos</h3>
             <div class="content-brands">
                 <button class="arrow-left2 control2" aria-label="Previous image">◀</button>
-                <div class="boxs">
+                <div class="boxes stores">
+                    <!--
                     <a href="#" class="item2 current-item2">
                         <figure>
                             <img src="./img/Marca 1.svg" alt="image-marca">
@@ -255,6 +258,7 @@
                             </figcaption>
                         </figure>
                     </a>
+                    -->
                 </div>
                 <button class="arrow-right2 control2" aria-label="Next Image">▶</button>
 
@@ -334,7 +338,6 @@
             </div>
         </section>
     </footer>
-    <script src="./slider.js"></script>
     <script>
         const register = document.getElementById('lCCount');
         const login = document.getElementById('bEnter');
@@ -376,6 +379,9 @@
 
         leave.addEventListener('click', logout);
     </script>
+    <script src="stores.js" type="module"></script>
+    <script src="products.js" type="module"></script>
+    <script src="./slider.js"></script>
 </body>
 
 </html>

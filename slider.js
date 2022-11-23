@@ -36,6 +36,7 @@ controls.forEach((control) => {
 const controls2 = document.querySelectorAll(".control2");
 let currentItem2 = 1;
 const items2 = document.querySelectorAll(".item2");
+console.log(items2);
 const maxItems2 = items.length + 2;
 
 controls2.forEach((control) => {
@@ -57,7 +58,8 @@ controls2.forEach((control) => {
     }
 
     items2.forEach((item) => item.classList.remove("current-item2"));
-
+    console.log(items2);
+    console.log(currentItem2)
     items2[currentItem2].scrollIntoView({
       behavior: "smooth",
       inline: "center",
