@@ -10,14 +10,14 @@ controls.forEach((control) => {
     if (isLeft) {
       currentItem -= 1;
     } else {
-      currentItem += 2;
+      currentItem += 1;
     }
 
     if (currentItem >= maxItems) {
       currentItem = 1;
     }
 
-    if (currentItem < 0) {
+    if (currentItem <= 0) {
       currentItem = maxItems - 1;
     }
 
@@ -37,7 +37,7 @@ const controls2 = document.querySelectorAll(".control2");
 let currentItem2 = 1;
 const items2 = document.querySelectorAll(".item2");
 console.log(items2);
-const maxItems2 = items.length + 2;
+const maxItems2 = items2.length;
 
 controls2.forEach((control) => {
   control.addEventListener("click", (e) => {
@@ -46,14 +46,14 @@ controls2.forEach((control) => {
     if (isLeft) {
       currentItem2 -= 1;
     } else {
-      currentItem2 += 2;
+      currentItem2 += 1;
     }
 
     if (currentItem2 >= maxItems2) {
       currentItem2 = 1;
     }
 
-    if (currentItem2 < 0) {
+    if (currentItem2 <= 0) {
       currentItem2 = maxItems2 - 1;
     }
 
