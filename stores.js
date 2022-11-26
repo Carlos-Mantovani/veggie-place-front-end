@@ -7,31 +7,37 @@ const getRestaurantList = async () => {
 }
 
 const restaurantList = await getRestaurantList();
-console.log(restaurantList);
 
-for (let i = 0; i < restaurantList.length; i++) {
-    if (i == 0) {
-        boxes.innerHTML += `
-        <a href="#" class="item2 current-item2">
-            <figure>
-                <img src="./img/Marca 1.svg" alt="${restaurantList[i].name}">
-                <figcaption>
-                    <p>${restaurantList[i].name}</p>
-                </figcaption>
-            </figure>
-        </a>
-    `
-    } else {
-        boxes.innerHTML += `
-        <a href="#" class="item2">
-            <figure>
-                <img src="./img/Marca 1.svg" alt="${restaurantList[i].name}">
-                <figcaption>
-                    <p>${restaurantList[i].name}</p>
-                </figcaption>
-            </figure>
-        </a>
-    `
+const createStores = () => {
+    for (let i = 0; i < restaurantList.length; i++) {
+        if (i == 0) {
+            boxes.innerHTML += `
+            <a href="#" class="item2 current-item2">
+                <figure>
+                    <img src="./img/Marca 1.svg" alt="${restaurantList[i].name}">
+                    <figcaption>
+                        <p>${restaurantList[i].name}</p>
+                    </figcaption>
+                </figure>
+            </a>
+        `
+        } else {
+            boxes.innerHTML += `
+            <a href="#" class="item2">
+                <figure>
+                    <img src="./img/Marca 1.svg" alt="${restaurantList[i].name}">
+                    <figcaption>
+                        <p>${restaurantList[i].name}</p>
+                    </figcaption>
+                </figure>
+            </a>
+        `
+        }
     }
+    const slider = document.createElement('script');
+    slider.src = 'slider.js';
+    document.head.appendChild(slider);
 }
+createStores();
+
 

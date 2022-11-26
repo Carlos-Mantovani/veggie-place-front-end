@@ -424,7 +424,7 @@ main section.best-seller .content-best-seller .boxes {
     width: 100%;
     padding: 2rem;
     max-width: 980px;
-    overflow-x: auto;
+    overflow-x: hidden;
     gap: 3.5rem;
 }
 
@@ -519,7 +519,7 @@ main section.brands .content-brands .boxes {
     width: 100%;
     padding: 2rem;
     max-width: 980px;
-    overflow-x: auto;
+    overflow-x: hidden;
     gap: 3.5rem;
 }
 
