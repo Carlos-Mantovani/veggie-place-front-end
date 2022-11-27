@@ -11,7 +11,7 @@ const productList = await getProductList();
 for (let i = 0; i < productList.length; i++) {
     if (i == 0) {
         boxes.innerHTML += `
-                <a href="./produto-mercado/produto.html" class="item">
+                <a href="./produto-mercado/produto.html" class="item" data-id="${productList[i]._id}">
                         <figure>
                             <img src="${productList[i].image}" alt="${productList[i].name} style="width=150px;">
                             <figcaption>
@@ -23,7 +23,7 @@ for (let i = 0; i < productList.length; i++) {
                     `
     } else {
         boxes.innerHTML += `
-                <a href="./produto-mercado/produto.html" class="item">
+                <a href="./produto-mercado/produto.html" class="item" data-id="${productList[i]._id}">
                         <figure>
                             <img src="${productList[i].image}" alt="${productList[i].name} style="width=150px;">
                             <figcaption>
@@ -35,5 +35,13 @@ for (let i = 0; i < productList.length; i++) {
                     `
     }
 }
+
+const items = document.querySelectorAll('.item');
+items.forEach((item) => {
+    console.log(item.dataset.id);
+    item.addEventListener('click', () => {
+        localStorage.setItem('dataId', item.dataset.id);
+    });
+})
 
 

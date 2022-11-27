@@ -39,5 +39,12 @@ const createStores = () => {
     document.head.appendChild(slider);
 }
 createStores();
+const items = document.querySelectorAll('.item');
+items.forEach((item) => {
+    console.log(item.dataset.id);
+    item.addEventListener('click', () => {
+        localStorage.setItem('dataId', item.dataset.id);
+    });
+})
 
 
