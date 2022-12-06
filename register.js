@@ -15,6 +15,7 @@ const register = async () => {
     const username = document.getElementById('username').value;
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('password2').value;
 
     const xhr = new XMLHttpRequest();
     const url = 'https://veggie-place-production.up.railway.app/register';
@@ -41,5 +42,12 @@ const register = async () => {
 form = document.getElementById('form');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    register();
+    const password = document.getElementById('password').value
+    const confirm = document.getElementById('password2').value
+    if (password == confirm) {
+        register();
+    } else {
+        error.innerText = 'senhas não coincidem.'
+    }
+
 });

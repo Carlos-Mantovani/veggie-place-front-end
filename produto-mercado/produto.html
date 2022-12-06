@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,12 @@
     <script src="../produto-mercado/functions.js" defer></script>
     <title>Produto Mercado</title>
 </head>
+
 <body>
     <header>
         <div class="container">
-            <a href="../index.html"><img src="../IMG/logo_veggie_place_larger-width.png" alt="logo-vp" title="voltar ao início"></a>
+            <a href="../index.html"><img src="../IMG/logo_veggie_place_larger-width.png" alt="logo-vp"
+                    title="voltar ao início"></a>
 
             <nav>
                 <ul>
@@ -38,23 +41,26 @@
                         <p>Embalagem 230g</p>
                     </div>
 
-                   <div class="value-and-inventory">
-                        <p id="price">R$ 14,99</p> 
-                        <p>Estoque 5</p> 
-                   </div>
+                    <div class="value-and-inventory">
+                        <p id="price">R$ 14,99</p>
+                        <p>Estoque 5</p>
+                    </div>
 
-                   <div class="buttons">
+                    <div class="buttons">
                         <div class="counter">
                             <button class="btn decrease">-</button>
                             <p id="quantity">1</p>
                             <button class="btn increase">+</button>
                         </div>
                         <div class="add">
-                           <a><p>Adicionar</p> <p id="total-price">total value</p></a>
+                            <a>
+                                <p>Adicionar</p>
+                                <p id="total-price">total value</p>
+                            </a>
                         </div>
 
 
-                   </div>
+                    </div>
                 </div>
                 <figure>
                     <img src="" alt="produto">
@@ -74,7 +80,7 @@
                             <p>Bebida de Caju Pacific Natural -Orgânico-</p>
                             <p class="product-value">R$ 34,90</p>
                         </figcaption>
-                        
+
                     </figure>
                 </a>
                 <a href="#" class="box-product">
@@ -84,7 +90,7 @@
                             <p>Bebida de Caju Pacific Natural -Orgânico-</p>
                             <p class="product-value">R$ 34,90</p>
                         </figcaption>
-                        
+
                     </figure>
                 </a>
                 <a href="#" class="box-product">
@@ -94,7 +100,7 @@
                             <p>Bebida de Caju Pacific Natural -Orgânico-</p>
                             <p class="product-value">R$ 34,90</p>
                         </figcaption>
-                        
+
                     </figure>
                 </a>
                 <a href="#" class="box-product">
@@ -104,11 +110,17 @@
                             <p>Bebida de Caju Pacific Natural -Orgânico-</p>
                             <p class="product-value">R$ 34,90</p>
                         </figcaption>
-                        
+
                     </figure>
                 </a>
             </div>
         </section>
     </main>
+    <script>
+        const productId = localStorage.getItem('dataId');
+        console.log(productId); 
+    </script>
+
 </body>
+
 </html>
